@@ -23,7 +23,7 @@ export default function Home() {
                 <div className="text-4xl font-bold text-blue-600 mb-2" >
                   {statsData.value}
                 </div>
-                <div classname="text-gray-600">{statsData.label}</div>
+                <div className="text-gray-600">{statsData.label}</div>
               </div>
             ))}
           </div>
