@@ -7,8 +7,8 @@ import { AccountChart } from "../_components/account-chart";
 
 export default async function AccountPage({ params }) {
 
-  const cleanId = decodeURIComponent(params.id).replace(/[^a-zA-Z0-9-]/g, ""); 
-const accountData = await getAccountWithTransactions(cleanId);
+  
+const accountData = await getAccountWithTransactions(params.id);
 
   if (!accountData) {
     notFound();
