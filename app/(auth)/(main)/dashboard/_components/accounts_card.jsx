@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { ArrowUpRight, ArrowDownRight } from "lucide-react";
 import Link from "next/link";
-import { updateDefaultAccount } from "@/actions/account";
+import { updateDefaultAccount } from "@/actions/accounts";
 import { toast } from "sonner";
 import useFetch from "@/hooks/use-fetch";
 
@@ -40,7 +40,7 @@ await updateDefaultFn(id);
 
 useEffect(() => {
 if (updateAccount?.sucess){
-    toast.sucess ("Default account updated sucessfully");
+    toast.success ("Default account updated sucessfully");
 }
 }, [updateAccount]);
 
